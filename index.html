@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DeckBridge — Build toy bridges with cards</title>
+<meta name="description" content="DeckBridge is a hand-crafted card puzzle where you swap card decks to raise and lower the arches of toy bridges. No accounts, no ads, fully offline.">
+<style>
+  :root {
+    --bg: #faf6ef;
+    --ink: #2c2620;
+    --accent: #c2703d;
+    --accent-dark: #9a5326;
+    --card: #ffffff;
+    --muted: #6f6558;
+    --line: #e6ddd0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  a { color: var(--accent-dark); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  header.site {
+    background: linear-gradient(160deg, #f7e9d4 0%, #efd9bd 55%, #e8c9a3 100%);
+    padding: 72px 0 56px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  .app-icon {
+    width: 96px; height: 96px;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #c2703d, #8f4f24);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(90, 50, 20, 0.25);
+    margin-bottom: 20px;
+  }
+  header.site h1 { font-size: 40px; letter-spacing: -0.5px; }
+  header.site p.tagline { font-size: 19px; color: #5c4c3a; margin-top: 8px; }
+  .badges { margin-top: 24px; display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .badge {
+    background: rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: #4c4033;
+  }
+
+  nav.site-nav {
+    margin-top: 28px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    font-size: 15px;
+  }
+  nav.site-nav a { text-decoration: none; font-weight: 600; color: var(--accent-dark); }
+  nav.site-nav a:hover { text-decoration: underline; }
+
+  section { padding: 48px 0; }
+  section h2 { font-size: 28px; margin-bottom: 16px; }
+  section p.lead { font-size: 17px; color: var(--muted); max-width: 720px; }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .feature {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .feature h3 { font-size: 17px; margin-bottom: 8px; color: var(--accent-dark); }
+  .feature p { font-size: 14px; color: var(--muted); }
+
+  .whats-new ul { margin: 12px 0 0 20px; color: var(--muted); }
+  .whats-new li { margin-bottom: 6px; }
+
+  .cta {
+    background: linear-gradient(160deg, #f1e3cd, #e9d2b0);
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+  .cta p { color: #5c4c3a; max-width: 620px; margin: 0 auto 16px; }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 40px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer.site .links { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 12px; }
+  footer.site a { text-decoration: none; }
+  footer.site a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="app-icon">DB</div>
+    <h1>DeckBridge</h1>
+    <p class="tagline">Build toy bridges with cards.</p>
+    <div class="badges">
+      <span class="badge">Card Puzzle</span>
+      <span class="badge">Single &amp; Two Player</span>
+      <span class="badge">Fully Offline</span>
+      <span class="badge">No Ads · No Tracking</span>
+    </div>
+    <nav class="site-nav">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Swap cards. Raise arches. Drive the bridge.</h2>
+    <p class="lead">
+      DeckBridge is a hand-crafted card puzzle where you swap card decks to raise and lower the
+      arches of toy bridges. Each card carries a colour and a height. The colour binds neighbouring
+      cards into one continuous bridge; the height controls how steep or gentle the slope is for
+      your toy car. Build a complete, smooth path from START to FINISH and the car drives the
+      entire route to confirm the bridge works.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Seven hand-tuned bridges</h3>
+        <p>Advance across six environments — workshop floor, riverside, sky arch, skyline tower,
+           deep canyon, cloud span, and a lantern-lit night market — each with its own palette and
+           ambient detail.</p>
+      </div>
+      <div class="feature">
+        <h3>Photo Studio</h3>
+        <p>Turn your camera roll into card faces. Pick a photo or take one with the camera, choose a
+           suit and value, and DeckBridge renders your image as the card art. All photos stay on
+           your device.</p>
+      </div>
+      <div class="feature">
+        <h3>Learn at your own pace</h3>
+        <p>Three-star par scoring, instant undo, restart, and a hint overlay on every level — casual
+           players are always welcome.</p>
+      </div>
+      <div class="feature">
+        <h3>Two-player pass-and-play</h3>
+        <p>Race the same bridge with separate move counters and timers. A winner badge crowns the
+           bridge master.</p>
+      </div>
+      <div class="feature">
+        <h3>Records tab</h3>
+        <p>Track every completion: total stars, best moves per bridge, completion times, and saved
+           bridge photos.</p>
+      </div>
+      <div class="feature">
+        <h3>Truly private</h3>
+        <p>No accounts, no analytics, no servers, no ads. Everything you make is stored locally on
+           your device — and never sent anywhere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="whats-new" style="padding-top: 0;">
+  <div class="wrap">
+    <h2>What's New in Version 1.0</h2>
+    <ul>
+      <li>Seven hand-tuned bridges across six environments</li>
+      <li>Photo Studio with library picker and camera capture</li>
+      <li>Two-player pass-and-play mode</li>
+      <li>Star par-scoring, undo, restart and hint overlays</li>
+      <li>Records tab with stars, times and bridge screenshots</li>
+      <li>Settings with theme, sound, haptics and one-tap reset</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to build?</h2>
+    <p>
+      DeckBridge is a self-contained premium experience designed for iPhone. No login, no signup,
+      no waiting — open the app and start building.
+    </p>
+    <p>Questions? Visit our <a href="support.html">Support page</a> or email us at
+       <a href="mailto:Sitikhodijah00232@gmail.com">Sitikhodijah00232@gmail.com</a>.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+    <p>&copy; 2026 DeckBridge. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
